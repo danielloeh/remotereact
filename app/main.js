@@ -1,7 +1,5 @@
-var React = require('react');
-var ReactDom = require('react-dom');
-var ReactApp = require('./components/ReactApp');
+const React = require('react');
+const ReactDom = require('react-dom');
+const ReactDynamicLoader = require('./components/ReactDynamicLoader');
 
-var mountNode = document.getElementById('react-main-mount');
-
-ReactDom.render(<ReactApp/>, mountNode);
+ReactDom.render(<ReactDynamicLoader/>, document.getElementById('main-mount'));

@@ -15,6 +15,9 @@ gulp.task('scripts', ['copyStaticResources'], function () {
 gulp.task('copyStaticResources', function () {
   gulp.src('./static/**/*')
     .pipe(gulp.dest('build/static'));
+
+  gulp.src('./app/index.html')
+    .pipe(gulp.dest('build'));
 });
 
 gulp.task('default', ['copyStaticResources', 'scripts']);

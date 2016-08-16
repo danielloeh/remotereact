@@ -1,6 +1,6 @@
 var React = require('react');
 
-var ReactApp = React.createClass({
+var ReactDynamicLoader = React.createClass({
 
   getInitialState: function() {
     return { externalSrc: "" };
@@ -50,4 +50,4 @@ var ReactApp = React.createClass({
   }
 });
 
-module.exports = ReactApp;
+module.exports = ReactDynamicLoader;
